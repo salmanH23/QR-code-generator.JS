@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #262a2f;
+}
+.contaniner{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.contaniner p{
+    font-weight: 600px;
+    font-size: 15px;
+    margin-bottom: 8px;
+
+}
+
+.contaniner input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #404eea;
+    outline: 0;
+    padding:10px ;
+    margin:10px 0 20px ;
+    border-radius: 5px;
+
+}
+
+.contaniner button{
+    width: 100%;
+    height: 50px;
+    background: #404eea;
+    color: #FFF;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin:20px 0 ;
+    font-weight: 500;
+}
+.imgBox {
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    border: 5px;
+    transition: max-height 0.5s ease;
+    margin: 10px auto;
+}
+
+.imgBox.show-img {
+    max-height: 300px;
+    display: block;
+    border: 1px solid #d1d1d1;
+}
+.imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+.imgBox .show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border:1px solid #d1d1d1;
+    display: block;
+}
+
+#qrText.error {
+    border: 2px solid red;
+    animation: shake 0.3s ease-in-out;
+    /* Define the shake animation */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
